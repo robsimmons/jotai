@@ -6,52 +6,52 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "typesVersions": {
-    ">=5.5": {
+    "<5.5": {
       "*": [
-        "dist/*"
+        "dist/ts_version_5.5_and_above_is_required.d.ts"
       ]
     },
     "*": {
       "*": [
-        "dist/ts_version_5.5_and_above_is_required.d.ts"
+        "dist/*"
       ]
     }
   },
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "types@>=5.5": "./dist/index.d.ts",
-      "types": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types@<5.5": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     },
     "./utils": {
-      "types@>=5.5": "./dist/utils.d.ts",
-      "types": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types@<5.5": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types": "./dist/utils.d.ts",
       "default": "./dist/utils.js"
     },
     "./vanilla": {
-      "types@>=5.5": "./dist/vanilla.d.ts",
-      "types": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types@<5.5": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types": "./dist/vanilla.d.ts",
       "default": "./dist/vanilla.js"
     },
     "./vanilla/utils": {
-      "types@>=5.5": "./dist/vanilla/utils.d.ts",
-      "types": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types@<5.5": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types": "./dist/vanilla/utils.d.ts",
       "default": "./dist/vanilla/utils.js"
     },
     "./vanilla/internals": {
-      "types@>=5.5": "./dist/vanilla/internals.d.ts",
-      "types": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types@<5.5": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types": "./dist/vanilla/internals.d.ts",
       "default": "./dist/vanilla/internals.js"
     },
     "./react": {
-      "types@>=5.5": "./dist/react.d.ts",
-      "types": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types@<5.5": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types": "./dist/react.d.ts",
       "default": "./dist/react.js"
     },
     "./react/utils": {
-      "types@>=5.5": "./dist/react/utils.d.ts",
-      "types": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types@<5.5": "./dist/ts_version_5.5_and_above_is_required.d.ts",
+      "types": "./dist/react/utils.d.ts",
       "default": "./dist/react/utils.js"
     }
   },
